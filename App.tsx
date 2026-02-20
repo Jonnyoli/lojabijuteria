@@ -2,20 +2,20 @@
 import React from 'react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { AppProvider, useApp } from './store';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import Catalog from './pages/Catalog';
-import ProductDetail from './pages/ProductDetail';
-import Cart from './pages/Cart';
-import Checkout from './pages/Checkout';
-import Profile from './pages/Profile';
-import Admin from './pages/Admin';
-import Login from './pages/Login';
-import FAQ from './pages/FAQ';
-import Shipping from './pages/Shipping';
-import Contact from './pages/Contact';
-import Care from './pages/Care';
-import VideoShopping from './components/VideoShopping';
+import Layout from '@/components/Layout';
+import Home from '@/pages/Home';
+import Catalog from '@/pages/Catalog';
+import ProductDetail from '@/pages/ProductDetail';
+import Cart from '@/pages/Cart';
+import Checkout from '@/pages/Checkout';
+import Profile from '@/pages/Profile';
+import Admin from '@/pages/Admin';
+import Login from '@/pages/Login';
+import FAQ from '@/pages/FAQ';
+import Shipping from '@/pages/Shipping';
+import Contact from '@/pages/Contact';
+import Care from '@/pages/Care';
+import VideoShopping from '@/components/VideoShopping';
 
 const AdminRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { user } = useApp();
